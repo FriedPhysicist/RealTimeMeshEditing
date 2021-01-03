@@ -12,6 +12,9 @@ public class mesh_ : MonoBehaviour
     public Vector2[] orginal_mesh_uv;
     public int[] orginal_mesh_triangels;
 
+    public RenderTexture RT;
+
+
 
 
 
