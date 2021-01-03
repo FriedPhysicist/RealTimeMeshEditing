@@ -32,6 +32,8 @@ public class mesh_ : MonoBehaviour
 
         }
     }
+
+
     void OnTriggerStay(Collider other) 
     { 
         if(other.CompareTag("sphere"))
@@ -40,8 +42,7 @@ public class mesh_ : MonoBehaviour
             { 
                 if(other.bounds.Contains(transform.TransformPoint(orginal_mesh_verticies[i])))
                 { 
-                    //orginal_mesh_verticies[i]-=new Vector3(0,0,2);
-                    System.Array.Clear(orginal_mesh.vertices,i,i);
+                    orginal_mesh_verticies[i]=new Vector3(orginal_mesh_verticies[i].x,orginal_mesh_verticies[i].y,-0.01f);
                 }
 
             } 
