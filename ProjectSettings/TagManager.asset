@@ -6,6 +6,8 @@ TagManager:
   tags:
   - sphere
   - bucket
+  - slicable
+  - Slicable
   layers:
   - Default
   - TransparentFX
